@@ -19,5 +19,15 @@ while True:
         if not todo_list:
             print("No tasks yet!")
         else:
-	for idx, task in enumerate(todo_list, start=1):
+	for idx, task in enumerate(todo_lsit, start=1):
                 print(f"{idx}. {task}")
+		elif choice == '3':
+        task_num = int(input("Enter task nmuber to remove: "))
+        if 1 <= task_num <= len(todo_list):
+            removed = todo_list.pop(task_num - 1)
+            print(f"Removed: {removed}")
+	    else:
+            print("Invalid task number!")
+    elif choice == '4':
+        print("Goodbye!")
+        break
