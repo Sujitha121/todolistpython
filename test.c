@@ -19,3 +19,5 @@ while True:
         if not todo_list:
             print("No tasks yet!")
         else:
+	for idx, task in enumerate(todo_list, start=1):
+                print(f"{idx}. {task}")
