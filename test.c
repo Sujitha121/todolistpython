@@ -10,3 +10,12 @@ def show_menu():
 while True:
     show_menu()
     choice = input("Enter your choice (1-4): ")
+    if choice == '1':
+        task = input("Enter a new task: ")
+        todo_list.append(task)
+        print("Task added.")
+    elif choice == '2':
+        print("\nYour Tasks:")
+        if not todo_list:
+            print("No tasks yet!")
+        else:
